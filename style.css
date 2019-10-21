@@ -7,23 +7,10 @@ html{
     justify-content: center;
     display: flex;
 }
-.plates  li{
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    padding: 6px 0px 15px 0px;
-    display: flex;
-}
+
 .contianer{
     margin-top: 37%;
 }
-h1{
-    font-weight: 2;
-    font-size: 23px;
-    margin: 10px auto auto auto;
-}
-.plates{
-    list-style: none;
-}
-
 .svg-image{
     fill: white;
     width: 200px;
@@ -37,6 +24,32 @@ h1{
     position: relative;
     background: rgba(255,255,255,0.95);
     box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+}
+h1{
+    font-weight: 2;
+    font-size: 23px;
+    margin: 10px auto auto auto;
+}
+.plates{
+    list-style: none;
+    margin-left: -36px;
+}
+.plates  li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 8px 0px 20px 0px;
+    display: flex;
+    margin-top: 8px;
+}
+.plates input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+}
+.plates input:checked + label:before {
+    content: '🌮';
+    margin-right: 10px;
+}
+.plates input {
+display: none;
 }
 .form-container{
     padding: 10px 10px;
@@ -55,15 +68,4 @@ h1{
     margin-left: 6px;
     border: 1px solid rgba(0,0,0,0.1);
     outline: 0;
-}
-.plates input + label:before {
-    content: '⬜️';
-    margin-right: 10px;
-}
-.plates input:checked + label:before {
-    content: '🌮';
-    margin-right: 10px;
-}
-.plates input {
-display: none;
 }
