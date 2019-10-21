@@ -1,0 +1,69 @@
+html{
+    background: url(http://wes.io/hx9M/oh-la-la.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+    justify-content: center;
+    display: flex;
+}
+.plates  li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 6px 0px 15px 0px;
+    display: flex;
+}
+.contianer{
+    margin-top: 37%;
+}
+h1{
+    font-weight: 2;
+    font-size: 23px;
+    margin: 10px auto auto auto;
+}
+.plates{
+    list-style: none;
+}
+
+.svg-image{
+    fill: white;
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+.sub-container{
+    width: 91%;
+    padding: 20px;
+    position: relative;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container{
+    padding: 10px 10px;
+    height: 39px;
+    display: flex;
+    position: relative;
+    outline: 0;
+    margin-left: -8px;
+}
+.submit-place-holder{
+    flex: 2;
+    padding: 0px 9px;
+    outline: 0;
+}
+.submit-btn{
+    margin-left: 6px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: 0;
+}
+.plates input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+}
+.plates input:checked + label:before {
+    content: '🌮';
+    margin-right: 10px;
+}
+.plates input {
+display: none;
+}
